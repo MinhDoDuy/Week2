@@ -1,21 +1,15 @@
-# utils.py
-def get_numbers_from_user():
-    """Nhập danh sách số, kiểm tra lỗi."""
-    while True:
-        try:
-            user_input = input("Nhập các số (cách nhau bằng khoảng trắng): ")
-            numbers = [float(x) for x in user_input.split()]
-            return numbers
-        except ValueError:
-            print("⚠️ Vui lòng nhập số hợp lệ!")
+#1. Tạo list bình phương các số:
+numbers = [1, 2, 3, 4, 5]
+squares = [n ** 2 for n in numbers]
+print(squares)  # [1, 4, 9, 16, 25]
 
-def calculate_stats(numbers):
-    """Tính trung bình và số lớn nhất."""
-    avg = sum(numbers) / len(numbers)
-    maximum = max(numbers)
-    return avg, maximum
+#2. Tạo list các số chẵn:
+even_numbers = [n for n in range(10) if n % 2 == 0]
+print(even_numbers)  # [0, 2, 4, 6, 8]
 
-📊 CHƯƠNG TRÌNH TÍNH TOÁN SỐ LIỆU
-Trung bình: 4.4
-Lớn nhất: 10.0
+even_squares = [n ** 2 for n in numbers if n % 2 == 0]
+print(even_squares)  # [4, 16]
 
+#3. List comprehension lồng nhau (nâng cao)
+pairs = [(x, y) for x in [1, 2, 3] for y in [4, 5]]
+print(pairs)  # [(1, 4), (1, 5), (2, 4), (2, 5), (3, 4), (3, 5)]
