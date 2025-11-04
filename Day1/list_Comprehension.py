@@ -14,3 +14,8 @@ def calculate_stats(numbers):
     avg = sum(numbers) / len(numbers)
     maximum = max(numbers)
     return avg, maximum
+
+📊 CHƯƠNG TRÌNH TÍNH TOÁN SỐ LIỆU
+Trung bình: 4.4
+Lớn nhất: 10.0
+
