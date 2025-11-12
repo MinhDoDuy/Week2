@@ -31,13 +31,11 @@ import json
 
 import json
 
-
 # Định nghĩa class Student
 class Student:
     def __init__(self, name, grade):
         self.name = name
         self.grade = grade
-
 
 students = []
 
