@@ -4,7 +4,7 @@ with open("user_log.txt", "a") as f:
         text = input("Nhập nội dung log (hoặc 'exit' để thoát): ")
         if text.lower() == 'exit':
             break
-        f.write(f"{text}\n")
+        f.write(text + "\n")
 
 print("Nội dung đã được ghi vào user_log.txt")
 
